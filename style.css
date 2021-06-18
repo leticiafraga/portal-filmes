@@ -72,20 +72,17 @@ form button:hover{
     text-align: right;
 }
 
-.video-container {
-	position:relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
+.c-itens{
+    margin: 20px;
+    background-color: #84BCDA;
+    padding: 20px;
+
 }
 
-.video-container iframe {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
+.video-container img{
+	width: 100%;
+    
+	
 }
 
 .info{
