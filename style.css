@@ -266,4 +266,27 @@ footer{
 footer .logo-f{
     text-align: right;
 }
+/*pesquisa*/
+.main-pesquisa{
+    text-align: center;
+    padding: 20px;
+}
+.mainTela{
+    clear: both;
+}
+.pesquisa{
+    padding: 20px;
+    font-size: 1.4em;
+}
+.box-pesquisa{
+    padding: 30px;
+    margin: 20px;
+    background-color: #ddd;
+}
+.imgPesquisa{
+    float: left;
+    max-width: 20%;
+}
+
+
 /*usei os media queries do Bootstrap*/
