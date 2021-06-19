@@ -37,12 +37,12 @@ function exibeFilmesCartaz(dados) {
 
             <div class="row cartaz-itens">
 
-                <div class="col-12 col-sm-12 col-md-3 yt1">
+                <div class="col-12 col-sm-12 col-md-3">
                     <div class="video-container">
                         <img class="imgCartaz" src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-8 info">
+                <div class="col-12 col-sm-12 col-md-9 info">
                     <h2>${filme.title}</h2>
                     <p><strong>Sinopse:</strong> ${filme.overview}</p>
                     <p><strong>Avaliação:</strong> ${filme.vote_average} <i class="fas fa-star"> </i></p>

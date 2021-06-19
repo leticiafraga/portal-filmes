@@ -18,17 +18,23 @@ function exibeFilmes(dados) {
         let ano = filme.release_date.substr(0, 4);
 
         texto = texto + `
-            <div class="col-12 box-pesquisa">
-            <a onclick="movieSelected('${filme.id}')" class="btn btn-primary bt-det" href="#">
-                <img class="imgPesquisa" src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
-                <h3>${filme.title}</h3>
-                <span>${ano}</span>
-                <p><strong>Avaliação:</strong> ${filme.vote_average} <i class="fas fa-star"> </i></p>
-                <p>
-                ${filme.overview}
-                </p>
-                </a>
+        <div class="col-12 box-pesquisa">
+        <a onclick="movieSelected('${filme.id}')" class="btn btn-primary bt-det" href="#">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <img class="imgPesquisa" src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
+                </div>
+                <div class="col-12 col-md-9">
+                    <h3>${filme.title}</h3>
+                    <span>${ano}</span>
+                    <p><strong>Avaliação:</strong> ${filme.vote_average} <i class="fas fa-star"> </i></p>
+                    <p>
+                        ${filme.overview}
+                    </p>
+                </div>
             </div>
+        </a>
+    </div>
         `
     }
     //var dado = dados;

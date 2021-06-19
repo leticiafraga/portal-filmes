@@ -58,6 +58,9 @@ form button:hover{
     background: #067BC2; 
 }
 /*main*/
+main{
+    background-color: wheat;
+}
 /*Lancamentos*/
 .lancamentos{
     background: wheat;
@@ -81,6 +84,7 @@ form button:hover{
 
 .video-container img{
 	width: 100%;
+    padding-bottom: 20px;
     
 }
 .bt-det{
@@ -91,6 +95,7 @@ form button:hover{
     text-align: left;
     padding: 20px;
     border-radius: 10px;
+    width: 90%;
 }
 .bt-det:hover{
     text-decoration: none;
@@ -265,14 +270,13 @@ footer .logo-f{
     font-size: 1.4em;
 }
 .box-pesquisa{
-    padding: 30px;
-    margin: 20px;
-    background-color: #ddd;
+
+    width: 100%;
 }
 .imgPesquisa{
     float: left;
-    max-width: 20%;
-    margin: 0 20px;
+    max-width: 100%;
+    padding: 0 20px;
 
 }
 
