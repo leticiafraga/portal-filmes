@@ -79,11 +79,11 @@ function movieSelected(id){
 
 document.getElementById('btPesquisa').addEventListener('click', executaPesquisa);
 document.getElementById('txtPesquisa')
-    .addEventListener('keyup', function(event) {
+    .addEventListener('keypress', function(event) {
         if (event.code === 'Enter')
         {
             event.preventDefault();
-            document.querySelector('form').submit();
+            document.getElementById('btPesquisa').click();
         }
     });
 
