@@ -24,8 +24,8 @@ function exibeFilme(filme) {
         <img class="imgDetalhes" src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
     </div>
     <div class="col-12 col-md-8">
-        <h1>${filme.title}</h1>
-        <h3>${filme.tagline}</h3>
+        <h1 class="h-det">${filme.title}</h1>
+        <h3 class="h-det">${filme.tagline}</h3>
         <span>${ano}</span>
         <p>Avaliação: ${filme.vote_average} <i class="fas fa-star"></i> </p>
         <p>

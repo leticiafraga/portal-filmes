@@ -43,7 +43,7 @@ function exibeFilmesCartaz(dados) {
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-9 info">
-                    <h2>${filme.title}</h2>
+                    <h2 class="h-main">${filme.title}</h2>
                     <p><strong>Sinopse:</strong> ${filme.overview}</p>
                     <p><strong>Avaliação:</strong> ${filme.vote_average} <i class="fas fa-star"> </i></p>
                     <p><strong>Lançamento:</strong> ${filme.release_date}</p>
