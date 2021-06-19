@@ -290,6 +290,8 @@ footer .logo-f{
     padding: 0 20px;
 
 }
-
+.card-pesquisa{
+    margin: 15px 0;
+}
 
 /*usei os media queries do Bootstrap*/
