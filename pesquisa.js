@@ -44,7 +44,7 @@ function exibeFilmes(dados) {
 }
 function executaPesquisa() {
     let query = document.getElementById('txtPesquisa').value;
-    getFilmes(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}&page=1`);
+    getFilmes(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}&page=1&language=pt-BR`);
 
 }
 

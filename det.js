@@ -7,7 +7,7 @@ function getFilme(url) {
 }
 function getMovie(){
     let movieId = document.cookie;
-    getFilme(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`)
+    getFilme(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}&language=pt-BR`)
 }
 
 getMovie();

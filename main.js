@@ -75,4 +75,4 @@ function abrirDetalhes() {
     let texto = '';
 
 }
-getFilmesCartaz(`https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&page=1`);
+getFilmesCartaz(`https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&page=1&language=pt-BR`);
