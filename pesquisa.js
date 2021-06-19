@@ -40,13 +40,7 @@ function exibeFilmes(dados) {
     //var dado = dados;
     //preencher div
     divTela.innerHTML = texto;
-    /*for (i = 0; i < len; i++) {
-        let boxPesquisa = document.getElementById(`box${i}`)
-    boxPesquisa.addEventListener('click', function(){
-        abrirDetalhes(i, dado);
-    });
-
-    }*/
+   
 }
 function executaPesquisa() {
     let query = document.getElementById('txtPesquisa').value;
@@ -55,18 +49,13 @@ function executaPesquisa() {
 }
 
 function movieSelected(id){
-    document.cookie.split(';').forEach(function(c) {
+    /*document.cookie.split(';').forEach(function(c) {
         document.cookie = c.trim().split('=')[0] + '=;' + 'expires=Thu, 01 Jan 1970 00:00:00 UTC;';
       });
-    document.cookie= id;
-    window.location = 'detalhes.html';
+    document.cookie= id;*/
+    window.location = `https://www.themoviedb.org/movie/${id}`;
     return false;
   }
-
-  function getMovie(){
-    let movieId = document.cookie= movieId;
-  }  
-
 /*function abrirDetalhes(i, dados) 
 {
     console.log(dados.results[i]);
