@@ -108,14 +108,13 @@ main{
     padding: 20px;
 }
 .imgDetalhes{
-    float: left;
-    margin: 0 30px;
     border: 2px solid black;
     max-width: 90%;
     border-radius: 10px;
 }
 .h-det{
     text-align: center;
+    margin: 15px 0;
 
 }
 .h-main{
