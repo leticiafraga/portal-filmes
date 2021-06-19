@@ -17,14 +17,13 @@ function abrirDetalhes() {
 
 function getFilmesCartaz(url) {
     fetch(url).then(res => res.json().then(data => {
-        console.log(data);
         exibeFilmesCartaz(data);
     }))
 }
 
 
 function exibeFilmesCartaz(dados) {
-    let divTela = document.getElementById('carousel');
+    let divTela = document.getElementById('carrossel');
     let texto = '';
 
 
@@ -34,23 +33,24 @@ function exibeFilmesCartaz(dados) {
         let ano = filme.release_date.substr(0, 4);
 
         texto = texto + `
-                                <div >
-                                    <div class="row c-itens">
-                                        <div class="col-12 col-sm-12 col-md-4 yt1">
-                                            <div class="video-container">
-                                            <img class="imgCartaz" src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-12 col-md-8 info">
-                                            <h2>${filme.title}</h2>
-                                            <p><strong>Sinopse:</strong> ${filme.overview}</p>
-                                            <p><strong>Avaliação:</strong> ${filme.vote_average}</p>
-                                            <p><strong>Lançamento:</strong> ${filme.release_date}</p>
-                                            
-                                        </div>
+        <a onclick="movieSelected('${filme.id}')" class="btn btn-primary bt-det" href="#">
 
-                                    </div>
-                                    </div>
+            <div class="row cartaz-itens">
+
+                <div class="col-12 col-sm-12 col-md-3 yt1">
+                    <div class="video-container">
+                        <img class="imgCartaz" src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-8 info">
+                    <h2>${filme.title}</h2>
+                    <p><strong>Sinopse:</strong> ${filme.overview}</p>
+                    <p><strong>Avaliação:</strong> ${filme.vote_average}</p>
+                    <p><strong>Lançamento:</strong> ${filme.release_date}</p>
+                </div>
+            </div>
+
+        </a>
            
                                     
         `
@@ -58,6 +58,15 @@ function exibeFilmesCartaz(dados) {
 
     //preencher div
     divTela.innerHTML = texto;
+}
+
+function movieSelected(id){
+    document.cookie.split(';').forEach(function(c) {
+        document.cookie = c.trim().split('=')[0] + '=;' + 'expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+      });
+    document.cookie= id;
+    window.location = 'detalhes.html';
+    return false;
 }
 
 function abrirDetalhes() {
