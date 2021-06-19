@@ -20,19 +20,18 @@ function exibeFilme(filme) {
         let ano = filme.release_date.substr(0, 4);
 
         texto =  `
-            <div class="col-12">
-            
-                <img class="imgDetalhes" src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
-                <h1>${filme.title}</h1>
-                <h3>${filme.tagline}</h3>
-                <span>${ano}</span>
-                <p>Avaliação: ${filme.vote_average}  <i class="fas fa-star"></i> </p>
-
-                <p>
-                ${filme.overview}
-                </p>
-                
-            </div>
+    <div class="col-12 col-md-4">
+        <img class="imgDetalhes" src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
+    </div>
+    <div class="col-12 col-md-8">
+        <h1>${filme.title}</h1>
+        <h3>${filme.tagline}</h3>
+        <span>${ano}</span>
+        <p>Avaliação: ${filme.vote_average} <i class="fas fa-star"></i> </p>
+        <p>
+            ${filme.overview}
+        </p>
+    </div>
         `
     
     //var dado = dados;
