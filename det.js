@@ -26,8 +26,8 @@ function exibeFilme(filme) {
     <div class="col-12 col-md-8">
         <h1 class="h-det">${filme.title}</h1>
         <h3 class="h-det">${filme.tagline}</h3>
-        <span>${ano}</span>
-        <p>Avaliação: ${filme.vote_average} <i class="fas fa-star"></i> </p>
+        <span><strong>${ano}</strong></span>
+        <p><strong>Avaliação:</strong> ${filme.vote_average} <i class="fas fa-star"></i> </p>
         <p>
             ${filme.overview}
         </p>

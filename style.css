@@ -59,11 +59,11 @@ form button:hover{
 }
 /*main*/
 main{
-    background-color: wheat;
+    background-color: #cfdce2;
 }
 /*Lancamentos*/
 .lancamentos{
-    background: wheat;
+    background: #cfdce2;
     padding: 20px;
 }
 .titulo1{
@@ -86,6 +86,10 @@ main{
 	width: 100%;
     padding-bottom: 20px;
     
+}
+#carrossel{
+    align-content: center;
+    text-align: center;
 }
 .bt-det{
     margin: 20px;
@@ -214,7 +218,7 @@ main{
 }
 .entrevistas{
     padding: 20px;
-    background: wheat;
+    background: #cfdce2;
 }
 /*novidades*/
 
