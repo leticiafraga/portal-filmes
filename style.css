@@ -79,10 +79,13 @@ form button:hover{
 
 }
 
+.idFilme{
+    color: #ddd;
+}
+
 .video-container img{
 	width: 100%;
     
-	
 }
 
 .info{
@@ -106,6 +109,19 @@ form button:hover{
 .info .row{
     font-size: 0.9em;
 }
+/*detalhes*/
+.row-det{
+    margin: 20px;
+    padding: 20px;
+}
+.imgDetalhes{
+    float: left;
+    margin: 0 30px;
+    border: 2px solid black;
+    max-width: 30%;
+}
+
+
 /*destaque*/
 .destaque{
     padding: 20px;

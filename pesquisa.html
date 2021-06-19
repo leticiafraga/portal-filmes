@@ -45,7 +45,7 @@
                                             <a class="nav-link" href="#">Avaliações</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Entrevistas & MakingOf</a>
+                                            <a class="nav-link" href="#">Entrevistas</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="pesquisa.html">Pesquisar</a>
@@ -69,7 +69,7 @@
         <div class="row pesquisa">
 
             <div class="col-12">
-                <form class="d-flex justify-content-center">
+                <form id="formPesquisa" class="d-flex justify-content-center">
                     <input id="txtPesquisa" type="search" placeholder="ex: star wars" aria-label="Search">
                     <button id="btPesquisa" type="button"><i class="fas fa-search"></i></button>
                 </form>
@@ -78,13 +78,8 @@
 
         </div>
         <div id="mainTela" class="row">
-            <div class="col-12 box-pesquisa">
-                <img class="imgPesquisa" src="" alt="">
-                <h3>Star Wars</h3>
-                <p>Creditos</p>
-                <p>
-                    Resumo
-                </p>
+            <div id="box" class="col-12 box-pesquisa">
+-
             </div>
         </div>
 
@@ -98,7 +93,9 @@
                 </p>
             </div>
             <div class="col-12 col-sm-12 col-md-2 col-lg-2 logo-f">
-                <img class="logo" src="images/logo.png" alt="Balde de pipoca">
+                <a href="index.html">
+                    <img class="logo" src="images/logo.png" alt="Balde de pipoca">
+                </a>
             </div>
         </div>
     </footer>

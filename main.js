@@ -34,7 +34,7 @@ function exibeFilmesCartaz(dados) {
         let ano = filme.release_date.substr(0, 4);
 
         texto = texto + `
-        <div >
+                                <div >
                                     <div class="row c-itens">
                                         <div class="col-12 col-sm-12 col-md-4 yt1">
                                             <div class="video-container">
@@ -42,36 +42,11 @@ function exibeFilmesCartaz(dados) {
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-8 info">
-                                            <h2>${filme.original_title}</h2>
+                                            <h2>${filme.title}</h2>
                                             <p><strong>Sinopse:</strong> ${filme.overview}</p>
-                                            <div class="row">
-                                                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                                                    <strong>Diretor:</strong> Don Hall
-                                                </div>
-                                                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                                                    <strong>Roteiro:</strong> Paul
-                                                    Briggs
-                                                </div>
-                                                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                                                    <strong>Estreia:</strong> 2021
-                                                </div>
-                                                <div>
-                                                    <strong>Elenco:</strong>
-
-                                                    <ul class="elenco">
-                                                        <li><a href="#">Kelly Marie Tran</a></li> |
-                                                        <li><a href="#">Awkwafina</a></li>|
-                                                        <li><a href="">Gemma Chan</a></li>|
-                                                        <li><a href="">Alan Tudyk</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <strong>Avaliação:</strong><br>
-                                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
+                                            <p><strong>Avaliação:</strong> ${filme.vote_average}</p>
+                                            <p><strong>Lançamento:</strong> ${filme.release_date}</p>
+                                            
                                         </div>
 
                                     </div>
