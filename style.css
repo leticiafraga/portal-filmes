@@ -84,12 +84,18 @@ form button:hover{
     
 }
 .bt-det{
-
+    margin: 20px;
     text-decoration: none;
-    background-color: inherit;
+    background-color: #84BCDA;
     color: inherit;
     text-align: left;
     padding: 20px;
+    border-radius: 10px;
+}
+.bt-det:hover{
+    text-decoration: none;
+    background-color: #84BCDA;
+
 }
 /*detalhes*/
 .row-det{
@@ -101,6 +107,7 @@ form button:hover{
     margin: 0 30px;
     border: 2px solid black;
     max-width: 30%;
+    border-radius: 10px;
 }
 
 
@@ -143,23 +150,7 @@ form button:hover{
     font-size: 1.2em;
        
 }
-.carousel-indicators button {
-    width: 30px !important;
-    height: 30px !important;
-    margin: 5px !important;
-    border-radius: 50%;
-    border-style: solid !important;
-    border-width: 2px !important;
-    border-color: #067BC2 !important;
-    
-}
-.carousel-indicators .active{
-    background-color: #067BC2 !important;
-    width: 30px !important;
-    height: 30px !important;
-    margin: 5px !important;
-    border-radius: 50%;
-}
+
 /*em destaque*/
 .form-select option{
     font-size: 0.9em;
@@ -281,6 +272,8 @@ footer .logo-f{
 .imgPesquisa{
     float: left;
     max-width: 20%;
+    margin: 0 20px;
+
 }
 
 

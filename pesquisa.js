@@ -19,11 +19,11 @@ function exibeFilmes(dados) {
 
         texto = texto + `
             <div class="col-12 box-pesquisa">
-            <a onclick="movieSelected('${filme.id}')" class="btn btn-primary" href="#">
+            <a onclick="movieSelected('${filme.id}')" class="btn btn-primary bt-det" href="#">
                 <img class="imgPesquisa" src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
                 <h3>${filme.title}</h3>
                 <span>${ano}</span>
-                <p>Creditos</p>
+                <p><strong>Avaliação:</strong> ${filme.vote_average} <i class="fas fa-star"> </i></p>
                 <p>
                 ${filme.overview}
                 </p>
