@@ -1,297 +1,310 @@
-body{
-    background-color: whitesmoke;
+body {
+  background-color: whitesmoke;
 }
-a{
-    color: inherit;
+a {
+  color: inherit;
 }
 /*Navbar*/
-.logo{
-    max-width: 40px;
-    margin: 10px;
+.logo {
+  max-width: 40px;
+  margin: 10px;
 }
-.logo-texto{
-    max-width: 150px;
+.logo-texto {
+  max-width: 150px;
 }
-.navbar-brand{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    max-width: 100%;
-    padding: 10px;
+.navbar-brand {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  max-width: 100%;
+  padding: 10px;
 }
-.navbar ul{
-    width: 100%;
-    align-content: center;
+.navbar ul {
+  width: 100%;
+  align-content: center;
 }
-.navbar >.container-fluid{
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    width: 100% !important;
+.navbar > .container-fluid {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  width: 100% !important;
 }
-header{
-    background: #84BCDA;
-    text-align: center;
-    padding: 10px 0;
+header {
+  background: #84bcda;
+  text-align: center;
+  padding: 10px 0;
 }
-header *{
-    align-items: center;
+header * {
+  align-items: center;
 }
-.nav-item{
-    padding: 5px
+.nav-item {
+  padding: 5px;
 }
-.navbar-toggler{
-    border-color: #067BC2 !important;
-    padding: 5px 19px;
+.navbar-toggler {
+  border-color: #067bc2 !important;
+  padding: 5px 19px;
+}
+.navbar-toggler i {
+  color: #067bc2;
+}
 
+form button {
+  color: #067bc2 !important;
+  border-color: #067bc2 !important;
+  background: #84bcda !important;
+  padding: 5px 19px !important;
+  height: 100% !important;
 }
-.navbar-toggler i{
-    color: #067BC2;
-}
-
-form button{
-    color: #067BC2 !important;
-    border-color: #067BC2 !important;
-    background:#84BCDA !important;
-    padding: 5px 19px !important;
-    height: 100% !important;
-
-}
-form button:hover{
-    background: #067BC2; 
+form button:hover {
+  background: #067bc2;
 }
 /*main*/
-main{
-    background-color: #cfdce2;
+main {
+  background-color: #cfdce2;
 }
 /*Lancamentos*/
-.lancamentos{
-    background: #cfdce2;
-    padding: 20px;
+.lancamentos {
+  background: #cfdce2;
+  padding: 20px;
 }
-.titulo1{
-    text-align: center;
-    padding: 30px;
-}
-
-.cartaz-itens{
-    margin: 20px;
-    background-color: #84BCDA;
-    
-
+.titulo1 {
+  text-align: center;
+  padding: 30px;
 }
 
-.idFilme{
-    color: #ddd;
+.cartaz-itens {
+  margin: 20px;
+  background-color: #84bcda;
 }
 
-.video-container img{
-	width: 100%;
-    padding-bottom: 20px;
-    
+.idFilme {
+  color: #ddd;
 }
-#carrossel{
-    align-content: center;
-    text-align: center;
-}
-.bt-det{
-    margin: 20px;
-    text-decoration: none;
-    background-color: #84BCDA;
-    color: inherit;
-    text-align: left;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%;
-}
-.bt-det:hover{
-    text-decoration: none;
-    background-color: #84BCDA;
 
+.video-container img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#destaques {
+  align-content: center;
+  text-align: center;
+}
+.bt-det {
+  margin: 20px;
+  text-decoration: none;
+  background-color: #84bcda;
+  color: inherit;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+}
+.bt-det:hover {
+  text-decoration: none;
+  background-color: #84bcda;
 }
 /*detalhes*/
-.row-det{
-    margin: 20px;
-    padding: 20px;
+.row-det {
+  margin: 20px;
+  padding: 20px;
 }
-.imgDetalhes{
-    border: 2px solid black;
-    max-width: 90%;
-    border-radius: 10px;
+.imgDetalhes {
+  border: 2px solid black;
+  max-width: 90%;
+  border-radius: 10px;
 }
-.h-det{
-    text-align: center;
-    margin: 15px 0;
-
+.h-det {
+  text-align: center;
+  margin: 15px 0;
 }
-.h-main{
-    text-align: center;
-    margin-bottom: 20px;
-
+.h-main {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /*destaque*/
-.destaque{
-    padding: 20px;
+.destaque {
+  padding: 20px;
 }
 
-.card-container{
-    margin: 20px 0;
+.card-container {
+  margin: 20px 0;
 }
-.card p{
-    z-index: 999;
+.card p {
+  z-index: 999;
 }
 .card .container {
-    width: 100%;
-    max-width: 250px;
-    padding-top: 100%; 
-    margin-bottom: 20px;
-    
-  }
+  width: 100%;
+  max-width: 250px;
+  padding-top: 100%;
+  margin-bottom: 20px;
+}
 .card {
-    height: 100%;
-    border-width: 5px;
-    border-color: #067BC2;
-    margin-bottom: 20px;
-    
+  height: 100%;
+  border-width: 5px;
+  border-color: #067bc2;
+  margin-bottom: 20px;
 }
-.img-container{
-    height: 90%;
+.img-container {
+  height: 90%;
 }
-.c1 .card-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.c1 .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.c1 .card-body p{
-    text-align: center;
-    font-size: 1.2em;
-       
+.c1 .card-body p {
+  text-align: center;
+  font-size: 1.2em;
 }
 
 /*em destaque*/
-.form-select option{
-    font-size: 0.9em;
+.form-select option {
+  font-size: 0.9em;
 }
-.c-itens{
-    margin-bottom: 70px;
+.c-itens {
+  margin-bottom: 70px;
 }
-.c-mais{
-    text-align: right;
-    padding: 20px;
+.c-mais {
+  text-align: right;
+  padding: 20px;
 }
-.c-mais button{
-    border-radius: 5px;
-    padding: 10px;
-    border-color: #067BC2;
-    border-style: solid;
-    background-color: #84BCDA;
-}
-/*ultimas avaliaçoes*/
-.ua{
-    padding: 20px;
-}
-.c-avaliacao{
-    font-size: 0.9em;
+.c-mais button {
+  border-radius: 5px;
+  padding: 10px;
+  border-color: #067bc2;
+  border-style: solid;
+  background-color: #84bcda;
 }
 
-.c-avaliacao img{
-    border-radius: 50%;
-    width: 150px;
-    max-width: 100%;
-    padding: 10px;
-    margin-right: 0px;
+.elenco {
+    padding: 10px 20px;
 }
-.estrelas, .fa-star{
-    padding-right: 0px;
-    margin-right: 0px;
-    font-size: 0.9em;
+
+/*ultimas avaliaçoes*/
+.ua {
+  padding: 20px;
 }
-.data-av{
-    font-size: 0.9em;
+.c-avaliacao {
+  font-size: 0.9em;
 }
-.r-c-mais div{
-    padding-right: 0px;
-    margin-right: 0px;
+
+.c-avaliacao img {
+  border-radius: 50%;
+  width: 150px;
+  max-width: 100%;
+  padding: 10px;
+  margin-right: 0px;
+}
+.estrelas,
+.fa-star {
+  padding-right: 0px;
+  margin-right: 0px;
+  font-size: 0.9em;
+}
+.data-av {
+  font-size: 0.9em;
+}
+.r-c-mais div {
+  padding-right: 0px;
+  margin-right: 0px;
 }
 /*Entrevistas*/
-.c3 h3{
-    padding-top: 10px;
+.c3 h3 {
+  padding-top: 10px;
 }
-.entrevistas{
-    padding: 20px;
-    background: #cfdce2;
+.entrevistas {
+  padding: 20px;
+  background: #cfdce2;
 }
 /*novidades*/
 
-.nov, .nse{
-    padding: 20px;
+.nov,
+.nse {
+  padding: 20px;
 }
-.nov > div{
-    padding:20px;
+.nov > div {
+  padding: 20px;
 }
-.nov img{
-    max-width: 100%;
+.nov img {
+  max-width: 100%;
 }
-.tags{
-    border-radius: 10px;
-    margin-right: 10px;
-    border-color: #067BC2;
-    border-style: solid;
-    background-color: #84BCDA;
+.tags {
+  border-radius: 10px;
+  margin-right: 10px;
+  border-color: #067bc2;
+  border-style: solid;
+  background-color: #84bcda;
 }
-.nse a i{
-    font-size: 250%;
-    padding-right: 40px;
-    padding-top: 20px;
+.nse a i {
+  font-size: 250%;
+  padding-right: 40px;
+  padding-top: 20px;
 }
-.nse ul{
-    list-style-type: none;
-    padding: 0px;
+.nse ul {
+  list-style-type: none;
+  padding: 0px;
 }
-.nse li{
-    padding-top: 10px;
+.nse li {
+  padding-top: 10px;
 }
-.sobre{
-    padding-right: 20px;
+.sobre {
+  padding-right: 20px;
 }
 /*footer*/
-footer{
-    background: #84BCDA;
+footer {
+  background: #84bcda;
 }
-.footer p{
-    align-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 40px;    
-    margin: 0px;
-    text-align: center;
+.footer p {
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  margin: 0px;
+  text-align: center;
 }
-footer .logo-f{
-    text-align: right;
+footer .logo-f {
+  text-align: right;
 }
 /*pesquisa*/
-.main-pesquisa{
-    text-align: center;
-    padding: 20px;
+.main-pesquisa {
+  text-align: center;
+  padding: 20px;
 }
-.mainTela{
-    clear: both;
+.mainTela {
+  clear: both;
 }
-.pesquisa{
-    padding: 20px;
-    font-size: 1.4em;
+.pesquisa {
+  padding: 20px;
+  font-size: 1.4em;
 }
-.box-pesquisa{
-
-    width: 100%;
+.box-pesquisa {
+  width: 100%;
 }
-.imgPesquisa{
-    float: left;
-    max-width: 100%;
-    padding: 0 20px;
-
+.imgPesquisa {
+  float: left;
+  max-width: 100%;
+  padding: 0 20px;
 }
-.card-pesquisa{
-    margin: 15px 0;
+.card-pesquisa {
+  margin: 15px 0;
 }
 
 /*usei os media queries do Bootstrap*/

@@ -23,7 +23,7 @@ function getFilmesCartaz(url) {
 
 
 function exibeFilmesCartaz(dados) {
-    let divTela = document.getElementById('carrossel');
+    let divTela = document.getElementById('destaques');
     let texto = '';
 
 
