@@ -15,7 +15,9 @@ function exibeFilmes(dados) {
 
     for (i = 0; i < dados.results.length; i++) {
         let filme = dados.results[i];
-        let ano = filme.release_date.substr(0, 4);
+        let ano = 0;
+
+
 
         texto = texto + `
         <div class="col-12 box-pesquisa">
@@ -26,8 +28,17 @@ function exibeFilmes(dados) {
                 </div>
                 <div class="col-12 col-md-9 card-pesquisa">
                     <h3>${filme.title}</h3>
-                    <span>${ano}</span>
-                    <p><strong>Avaliação:</strong> ${filme.vote_average} <i class="fas fa-star"> </i></p>
+                `
+        if (filme.release_date) {
+            ano = filme.release_date.substr(0, 4);
+            texto += `<span>${ano}</span>`;
+
+        }
+        if (filme.vote_average != 0) {
+            texto += `<p><strong>Avaliação:</strong> ${filme.vote_average} <i class="fas fa-star"> </i></p>`;
+        }
+        texto += `
+                    
                     <p>
                         ${filme.overview}
                     </p>
@@ -40,7 +51,7 @@ function exibeFilmes(dados) {
     //var dado = dados;
     //preencher div
     divTela.innerHTML = texto;
-   
+
 }
 function executaPesquisa() {
     let query = document.getElementById('txtPesquisa').value;
@@ -48,14 +59,14 @@ function executaPesquisa() {
 
 }
 
-function movieSelected(id){
+function movieSelected(id) {
     /*document.cookie.split(';').forEach(function(c) {
         document.cookie = c.trim().split('=')[0] + '=;' + 'expires=Thu, 01 Jan 1970 00:00:00 UTC;';
       });
     document.cookie= id;*/
     window.location = `https://www.themoviedb.org/movie/${id}`;
     return false;
-  }
+}
 /*function abrirDetalhes(i, dados) 
 {
     console.log(dados.results[i]);
@@ -68,9 +79,8 @@ function movieSelected(id){
 
 document.getElementById('btPesquisa').addEventListener('click', executaPesquisa);
 document.getElementById('txtPesquisa')
-    .addEventListener('keypress', function(event) {
-        if (event.code === 'Enter')
-        {
+    .addEventListener('keypress', function (event) {
+        if (event.code === 'Enter') {
             event.preventDefault();
             document.getElementById('btPesquisa').click();
         }
