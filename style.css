@@ -1,5 +1,5 @@
 body {
-  background-color: whitesmoke;
+  background-color: #912f56;
 }
 a {
   color: inherit;
@@ -28,7 +28,7 @@ a {
   width: 100% !important;
 }
 header {
-  background: #84bcda;
+  background: #ff87ab;
   text-align: center;
   padding: 10px 0;
 }
@@ -49,7 +49,7 @@ header * {
 form button {
   color: #067bc2 !important;
   border-color: #067bc2 !important;
-  background: #84bcda !important;
+  background: #ff87ab !important;
   padding: 5px 19px !important;
   height: 100% !important;
 }
@@ -58,11 +58,11 @@ form button:hover {
 }
 /*main*/
 main {
-  background-color: #cfdce2;
+  background-color: #ffc4d6;
 }
 /*Lancamentos*/
 .lancamentos {
-  background: #cfdce2;
+  background: #ffc4d6;
   padding: 20px;
 }
 .titulo1 {
@@ -72,14 +72,14 @@ main {
 
 .cartaz-itens {
   margin: 20px;
-  background-color: #84bcda;
+  background-color: #ff87ab;
 }
 
 .idFilme {
   color: #ddd;
 }
 
-.video-container img {
+.cartaz-container img {
   width: 100%;
   padding-bottom: 20px;
 }
@@ -109,7 +109,7 @@ main {
 .bt-det {
   margin: 20px;
   text-decoration: none;
-  background-color: #84bcda;
+  background-color: #ff87ab;
   color: inherit;
   text-align: left;
   padding: 20px;
@@ -118,7 +118,7 @@ main {
 }
 .bt-det:hover {
   text-decoration: none;
-  background-color: #84bcda;
+  background-color: #ff87ab;
 }
 /*detalhes*/
 .row-det {
@@ -191,7 +191,7 @@ main {
   padding: 10px;
   border-color: #067bc2;
   border-style: solid;
-  background-color: #84bcda;
+  background-color: #ff87ab;
 }
 
 .elenco {
@@ -232,7 +232,7 @@ main {
 }
 .entrevistas {
   padding: 20px;
-  background: #cfdce2;
+  background: #ffc4d6;
 }
 /*novidades*/
 
@@ -251,7 +251,7 @@ main {
   margin-right: 10px;
   border-color: #067bc2;
   border-style: solid;
-  background-color: #84bcda;
+  background-color: #ff87ab;
 }
 .nse a i {
   font-size: 250%;
@@ -270,7 +270,7 @@ main {
 }
 /*footer*/
 footer {
-  background: #84bcda;
+  background: #ff87ab;
 }
 .footer p {
   align-content: center;
@@ -288,8 +288,9 @@ footer .logo-f {
   text-align: center;
   padding: 20px;
 }
-.mainTela {
+#mainTela {
   clear: both;
+  min-height: 500px;
 }
 .pesquisa {
   padding: 20px;
@@ -305,6 +306,11 @@ footer .logo-f {
 }
 .card-pesquisa {
   margin: 15px 0;
+}
+
+#txtPesquisa, #btPesquisa {
+  border-radius: 5px;
+  margin: 0px 2px;
 }
 
 /*usei os media queries do Bootstrap*/

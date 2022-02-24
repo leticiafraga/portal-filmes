@@ -1,12 +1,6 @@
 const API_KEY = 'f3c16dc5c01af0ef0e68222092a54828';
 
 
-function executaPesquisa() {
-    let query = document.getElementById('txtPesquisa').value;
-    getFilmes(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}&page=1`);
-
-}
-
 function abrirDetalhes() {
     window.open('detalhes.html');
     let det = document.getElementById('detalhes');
@@ -28,7 +22,7 @@ function exibeFilmesCartaz(dados) {
 
 
     dados.results.length;
-    for (i = 0; i < dados.results.length; i++) {
+    for (i = 0; i < dados.results.length, i< 10; i++) {
         let filme = dados.results[i];
         let ano = filme.release_date.substr(0, 4);
 
@@ -38,7 +32,7 @@ function exibeFilmesCartaz(dados) {
             <div class="row cartaz-itens">
 
                 <div class="col-12 col-sm-12 col-md-3">
-                    <div class="video-container">
+                    <div class="cartaz-container">
                         <img class="imgCartaz" src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
                     </div>
                 </div>
