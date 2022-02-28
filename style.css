@@ -9,8 +9,8 @@ a {
   max-width: 40px;
   margin: 10px;
 }
-.logo-texto {
-  max-width: 150px;
+.logo-header {
+  max-height: 70px;
 }
 .navbar-brand {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -202,7 +202,7 @@ main {
 }
 
 /*ultimas avaliaçoes*/
-.ua {
+#avaliacoes {
   padding: 20px;
 }
 .c-avaliacao {
@@ -233,7 +233,7 @@ main {
 .c3 h3 {
   padding-top: 10px;
 }
-.entrevistas {
+#entrevistas {
   padding: 20px;
   background: #ffc4d6;
 }
@@ -315,5 +315,3 @@ footer .logo-f {
   border-radius: 5px;
   margin: 0px 2px;
 }
-
-/*usei os media queries do Bootstrap*/
