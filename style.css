@@ -31,6 +31,9 @@ header {
   background: #ff87ab;
   text-align: center;
   padding: 10px 0;
+  position: fixed;
+  z-index: 999;
+  display: block;
 }
 header * {
   align-items: center;
@@ -59,13 +62,16 @@ form button:hover {
 /*main*/
 main {
   background-color: #ffc4d6;
+  
 }
 /*Lancamentos*/
 .lancamentos {
   background: #ffc4d6;
   padding: 20px;
+  
 }
 .titulo1 {
+  margin-top: 50px;
   text-align: center;
   padding: 30px;
 }
@@ -121,9 +127,13 @@ main {
   background-color: #ff87ab;
 }
 /*detalhes*/
+#detalhes {
+  padding-top: 50px;
+}
 .row-det {
-  margin: 20px;
   padding: 20px;
+  padding-top: 70px;
+
 }
 .imgDetalhes {
   border: 2px solid black;
@@ -287,6 +297,10 @@ footer .logo-f {
   text-align: right;
 }
 /*pesquisa*/
+#titulo-pesquisa {
+  padding: 30px;
+  margin-top: 50px;
+}
 .main-pesquisa {
   text-align: center;
   padding: 20px;
