@@ -10,13 +10,12 @@ a {
   margin: 10px;
 }
 .logo-header {
-  max-height: 70px;
+  max-height: 60px;
 }
 .navbar-brand {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   max-width: 100%;
-  padding: 10px;
 }
 .navbar ul {
   width: 100%;
@@ -39,31 +38,40 @@ header * {
   align-items: center;
 }
 .nav-item {
-  padding: 5px;
+  padding: 5px 10px;
+  transition: 0.3s;
 }
+.nav-item:hover, .nav-item:active {
+  color: #912f56;
+  background-color: #ffc4d6;
+}
+
 .navbar-toggler {
-  border-color: #067bc2 !important;
+  border-color: #912f56 !important;
   padding: 5px 19px;
 }
 .navbar-toggler i {
-  color: #067bc2;
+  color: #912f56;
 }
 
 form button {
-  color: #067bc2 !important;
-  border-color: #067bc2 !important;
+  color: #912f56 !important;
+  border-color: #912f56 !important;
   background: #ff87ab !important;
   padding: 5px 19px !important;
   height: 100% !important;
 }
 form button:hover {
-  background: #067bc2;
+  background: #912f56;
 }
 /*main*/
 main {
   background-color: #ffc4d6;
+  padding-left: 4% !important;
+  padding-right: 4% !important;
   
 }
+
 /*Lancamentos*/
 .lancamentos {
   background: #ffc4d6;
@@ -71,23 +79,14 @@ main {
   
 }
 .titulo1 {
-  margin-top: 50px;
+  margin-top: 90px;
   text-align: center;
   padding: 30px;
 }
 
-.cartaz-itens {
-  margin: 20px;
-  background-color: #ff87ab;
-}
-
-.idFilme {
-  color: #ddd;
-}
-
-.cartaz-container img {
-  width: 100%;
-  padding-bottom: 20px;
+#destaques > a {
+  border-color: #912f56;
+  
 }
 
 .video-container {
@@ -108,17 +107,45 @@ main {
   height: 100%;
 }
 
+.carousel-indicators > button {
+  height: 10px !important;
+  margin: 0px 10px !important;
+}
+
+/*destaques*/
 #destaques {
   align-content: center;
   text-align: center;
+  margin: 0px;  
 }
+
+#em-cartaz {
+  text-align: center;
+  
+}
+
+.cartaz-itens {
+  margin: 2%;
+  background-color: #ff87ab;
+}
+
+.idFilme {
+  color: #ddd;
+}
+
+.cartaz-container img {
+  width: 100%;
+  padding-bottom: 20px;
+  
+}
+
 .bt-det {
-  margin: 20px;
+  margin: 2%;
   text-decoration: none;
   background-color: #ff87ab;
   color: inherit;
   text-align: left;
-  padding: 20px;
+  padding: 2%;
   border-radius: 10px;
   width: 90%;
 }
@@ -126,9 +153,11 @@ main {
   text-decoration: none;
   background-color: #ff87ab;
 }
+
 /*detalhes*/
 #detalhes {
-  padding-top: 50px;
+  padding-top: 90px;
+  margin: 0px;
 }
 .row-det {
   padding: 20px;
@@ -169,7 +198,7 @@ main {
 .card {
   height: 100%;
   border-width: 5px;
-  border-color: #067bc2;
+  border-color: #912f56;
   margin-bottom: 20px;
   background-color: #912f56;
   color: #fff;
@@ -202,7 +231,7 @@ main {
 .c-mais button {
   border-radius: 5px;
   padding: 10px;
-  border-color: #067bc2;
+  border-color: #912f56;
   border-style: solid;
   background-color: #ff87ab;
 }
@@ -217,6 +246,7 @@ main {
 }
 .c-avaliacao {
   font-size: 0.9em;
+  background-color: #fc5788;
 }
 
 .c-avaliacao img {
@@ -247,6 +277,10 @@ main {
   padding: 20px;
   background: #ffc4d6;
 }
+
+hr:not([size]) {
+  height: 2px;
+}
 /*novidades*/
 
 .nov,
@@ -262,7 +296,7 @@ main {
 .tags {
   border-radius: 10px;
   margin-right: 10px;
-  border-color: #067bc2;
+  border-color: #912f56;
   border-style: solid;
   background-color: #ff87ab;
 }
@@ -299,7 +333,7 @@ footer .logo-f {
 /*pesquisa*/
 #titulo-pesquisa {
   padding: 30px;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 .main-pesquisa {
   text-align: center;

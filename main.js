@@ -20,7 +20,6 @@ function exibeFilmesCartaz(dados) {
     let divTela = document.getElementById('destaques');
     let texto = '';
 
-
     dados.results.length;
     for (i = 0; i < dados.results.length, i< 10; i++) {
         let filme = dados.results[i];
@@ -44,13 +43,10 @@ function exibeFilmesCartaz(dados) {
                 </div>
             </div>
 
-        </a>
-           
-                                    
+        </a>                           
         `
     }
 
-    //preencher div
     divTela.innerHTML = texto;
 }
 

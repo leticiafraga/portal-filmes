@@ -33,9 +33,7 @@ function exibeFilme(filme) {
         </p>
     </div>
         `
-    
-    //var dado = dados;
-    //preencher div
+
     divTela.innerHTML = texto;
     
 }

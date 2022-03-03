@@ -2,7 +2,7 @@ const API_KEY = 'f3c16dc5c01af0ef0e68222092a54828';
 
 function getFilmes(url) {
     fetch(url).then(res => res.json().then(data => {
-        console.log(data);
+        
         exibeFilmes(data);
     }))
 }
@@ -12,16 +12,13 @@ function exibeFilmes(dados) {
     let divTela = document.getElementById('mainTela');
     let texto = '';
 
-
     for (i = 0; i < dados.results.length; i++) {
         let filme = dados.results[i];
         let ano = 0;
 
-
-
         texto = texto + `
         <div class="col-12 box-pesquisa">
-        <a onclick="movieSelected('${filme.id}')" class="btn btn-primary bt-det" href="#">
+        <a class="btn btn-primary bt-det" href="https://www.themoviedb.org/movie/${filme.id}" target="_blank">
             <div class="row">
                 <div class="col-12 col-md-3 card-pesquisa">
                     <img class="imgPesquisa" src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
@@ -48,8 +45,11 @@ function exibeFilmes(dados) {
     </div>
         `
     }
-    //var dado = dados;
-    //preencher div
+
+    if (dados.results.length == 0) {
+        texto = `<div class="col-12 box-pesquisa"><h3>Nenhum resultado encontrado!<h3></div>`
+    }
+    
     divTela.innerHTML = texto;
 
 }
@@ -57,12 +57,6 @@ function executaPesquisa() {
     let query = document.getElementById('txtPesquisa').value;
     getFilmes(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}&page=1&language=pt-BR`);
 
-}
-
-function movieSelected(id) {
-
-    window.location = `https://www.themoviedb.org/movie/${id}`;
-    return false;
 }
 
 document.getElementById('btPesquisa').addEventListener('click', executaPesquisa);
@@ -73,4 +67,3 @@ document.getElementById('txtPesquisa')
             document.getElementById('btPesquisa').click();
         }
     });
-
